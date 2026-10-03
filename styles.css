@@ -1,0 +1,100 @@
+/* Google Fonts: https://fonts.google.com (Inter, JetBrains Mono, Source Serif 4) */
+
+:root {
+    --blue-black: #11111A;
+    --darkest-blue: #171B26;
+    --dark-blue: #272D3F;
+    --medium-blue: #2B3040;
+    --lighter-blue: #34495E;
+    --blue-gray: #A7ACC1;
+    --medium-gray: #5D626E;
+    --lightest-gray: #F3F4F7;
+    --white: #FFFFFF;
+    --emphasis-yellow: #D6A419;
+    --complimentary-green: #206557;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--medium-gray);
+}
+
+h1, h2 {
+     margin: 0;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;;
+    line-height: 1.2;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none; margin: 0; padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.site-header {
+    background-color: var(--darkest-blue);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    /* separates elements inside container */
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    margin: 0;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.logo-slashes {
+    color: var(--emphasis-yellow);
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 0.25rem;                    /* space between nav links */
+}
+
+.site-nav a {
+    display: block;                  /* to help with padding and border radius */
+    padding: 0.5rem .75rem;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--lightest-gray);
+    border-radius: 5px;
+}
+
+.site-nav a[aria-current="page"] {
+    background-color: var(--lighter-blue);
+}
+
+.site-nav a:hover {
+    background-color: var(--emphasis-yellow);
+}
+
+footer {
+    background-color: var(--darkest-blue);
+}
