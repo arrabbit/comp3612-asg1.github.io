@@ -173,6 +173,7 @@ a {
 .product-info {
     padding: 1rem;
     background-color: var(--white);
+    border-radius: 5px;
 }
 
 .product-info h3 {
