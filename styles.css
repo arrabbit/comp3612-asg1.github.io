@@ -134,6 +134,18 @@ a {
     color: var(--blue-black);
 }
 
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    /* 4 equal columns */
+    gap: 1.5rem;
+}
+
+.product-card img{
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+
 /* ----Why us styles--------------------------------------------------------------------------------------- */
 .why-us {
     padding: 2.5rem 0;
