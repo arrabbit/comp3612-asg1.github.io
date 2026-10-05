@@ -8,6 +8,7 @@
     --lighter-blue: #34495E;
     --blue-gray: #A7ACC1;
     --medium-gray: #5D626E;
+    --light-gray: #DADDE3;
     --lightest-gray: #F3F4F7;
     --white: #FFFFFF;
     --emphasis-yellow: #D6A419;
@@ -132,6 +133,7 @@ a {
 .feature-products h2 {
     font-size: 1.25rem;
     color: var(--blue-black);
+    margin-bottom: 1rem;
 }
 
 .product-list {
@@ -140,10 +142,65 @@ a {
     gap: 1.5rem;
 }
 
+.product-card {
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    border: 1px solid var(--blue-black);
+    border-radius: 5px;
+}
+
+.product-card figure {
+    border-top: 3px solid var(--complimentary-green);
+    border-radius: 5px;
+    margin: 0;
+    padding: 3rem 2rem;
+}
+
+.product-card figure:hover {
+    border-top: 3px solid var(--emphasis-yellow);
+    border-radius: 5px;
+}
+
 .product-card img{
     display: block;
     width: 180px;
     height: 180px;
+}
+
+.product-info {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.product-info h3 {
+    font-size: 1rem;
+    color: var(--blue-black);
+}
+
+.product-price {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.75rem;
+    color: var(--medium-gray);
+    margin: 0.25rem 0 0.75rem;
+}
+
+.details-button {
+    display: block;
+    color: var(--blue-black);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid var(--blue-black);
+    border-radius: 3px;
+}
+
+.product-card:hover .details-button {
+    background-color: var(--blue-black);
+    color: var(--white);
 }
 
 /* ----Why us styles--------------------------------------------------------------------------------------- */
