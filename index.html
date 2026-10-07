@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">  
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion for Computer Scientists</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 
+    IMAGE ATTRIBUTIONS & CITATIONS
+    -------------------------------------------------------------------------------------------------------------------
+    All product images in this project were generated using Google Gemini AI (October 2026) using the provided
+    assignment images, and the following prompt: 
+        "Can you create a female clothing article equivalent image to the one I've provided? Your created image should
+         be the same size and color scheme, with the same category of clothing (ex. sweater should stay a sweater,
+         shoes should stay shoes, etc.). But, the product should be updated to what would be sold in the female
+         category of the store."
+
+    1. 003-small-front.png  -> sweater
+    2. 008-small-front.png  -> shoes
+    3. 011-small-front.png  -> skirt
+    4. 009-small-front.png  -> cardigan
+    -->
+</head>
+
+<body>
+
+
+    
+    <header class="site-header">
+        <div class = "container">
+            <p class="logo"><span class="logo-slashes">// </span>COMP3612 Assign 1</p>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="home-banner">   
+            <div class="container">
+                <div class="home-banner-content">           <!-- narrow text column -->
+                    <h1>Fashion for Computer Scientists</h1>
+                    <p>Discover our collection of comfortable, stylish clothes for every programming occasion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <ul class="product-list">
+                    <!-- Sweater -->
+                    <li>
+                        <article class="product-card">
+                            <figure>
+                                <img src="images/003-small-front.png" alt="Navy cable knit sweater">
+                            </figure>
+                            <div class="product-info">
+                                <h3>Cable Knit Sweater</h3>
+                                <p class="product-price">$119.99</p>
+                                <a class="details-button" href="product.html">View Details</a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Shoes -->
+                    <li>
+                        <article class="product-card">
+                            <figure>
+                                <img src="images/008-small-front.png" alt="Black Boots">
+                            </figure>
+                            <div class="product-info">
+                                <h3>Chelsea Leather Boots</h3>
+                                <p class="product-price">$189.99</p>
+                                <a class="details-button" href="#">View Details</a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Skirt -->
+                    <li>
+                        <article class="product-card">
+                            <figure>
+                                <img src="images/011-small-front.png" alt="Plaid Pleated Skirt">
+                            </figure>
+                            <div class="product-info">
+                                <h3>Vintage Plaid Skirt</h3>
+                                <p class="product-price">$52.99</p>
+                                <a class="details-button" href="#">View Details</a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Cardigan -->
+                    <li>
+                        <article class="product-card">
+                            <figure>
+                                <img src="images/009-small-front.png" alt="Beige Cardigan">
+                            </figure>
+                            <div class="product-info">
+                                <h3>Cardigan Sweater</h3>
+                                <p class="product-price">$69.99</p>
+                                <a class="details-button" href="#">View Details</a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>    
+        </section>
+
+        <section class="why-us">
+            <div class="container">
+                <h2>Why Choose COMP3612 for your fashion needs?</h2>
+                <p>We believe that programmers need more than black hoodies. You'll be a more confident, comfortable, and efficient developer wearing our clothes. Our carefully curated collection features premium fabrics, expert craftsmanship, and timeless designs.</p>
+                <p>From scrum sessions to 4am debugging, we have the perfect clothes for every moment in your coding journey. Quality you can feel, style you can trust.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <section class="footer-column">
+                    <h2>Customer Service</h2>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-column">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-column">
+                    <h2>Connect</h2>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <p class = "copyright">
+                &copy; 2025 COMP3612. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

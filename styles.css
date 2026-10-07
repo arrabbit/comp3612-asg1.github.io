@@ -1,0 +1,261 @@
+/* Google Fonts: https://fonts.google.com (Inter, JetBrains Mono, Source Serif 4) */
+
+:root {
+    --blue-black: #11111A;
+    --darkest-blue: #171B26;
+    --dark-blue: #272D3F;
+    --medium-blue: #2B3040;
+    --lighter-blue: #34495E;
+    --blue-gray: #A7ACC1;
+    --medium-gray: #5D626E;
+    --light-gray: #DADDE3;
+    --lightest-gray: #F3F4F7;
+    --white: #FFFFFF;
+    --emphasis-yellow: #D6A419;
+    --complimentary-green: #206557;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--medium-gray);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;   /* 1fr will make main content fill available space */
+    min-height: 100vh;                   /* makes the bodyat least the full window height */
+}
+
+h1, h2 {
+     margin: 0;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none; margin: 0; padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ----Header styles------------------------------------------------------------------------------------------------ */
+.site-header {
+    background-color: var(--darkest-blue);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    /* separates elements inside container */
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    margin: 0;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.logo-slashes {
+    color: var(--emphasis-yellow);
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 0.25rem;                    /* space between nav links */
+}
+
+.site-nav a {
+    display: block;                  /* to help with padding and border radius */
+    padding: 0.5rem .75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--lightest-gray);
+    border-radius: 5px;
+}
+
+.site-nav a[aria-current="page"] {
+    background-color: var(--lighter-blue);
+}
+
+.site-nav a:hover {
+    background-color: var(--emphasis-yellow);
+}
+
+/* ----Home banner styles------------------------------------------------------------------------------------------- */
+.home-banner {
+    background-color: var(--dark-blue);
+    padding: 6rem 0 3rem 6rem;      /* top right bottom left */
+}
+
+.home-banner-content {
+    max-width: 600px;
+    margin: 0 auto;           /* sets top/bottom to 0 and splits left/right evenly to center*/
+}
+
+.home-banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.home-banner-content p {
+    font-size: 0.75rem;
+    color: var(--blue-gray);
+    margin: 0 0 2rem;         /* top right/left bottom */
+}
+
+/* ----Feature product styles--------------------------------------------------------------------------------------- */
+.feature-products {
+    background-color: var(--lightest-gray);
+    padding: 2.5rem 0;
+}
+
+.feature-products h2 {
+    font-size: 1.25rem;
+    color: var(--blue-black);
+    margin-bottom: 1rem;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    /* 4 equal columns */
+    gap: 1.5rem;
+}
+
+.product-card {
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    border: 1px solid var(--blue-black);
+    border-radius: 5px;
+}
+
+.product-card figure {
+    border-top: 3px solid var(--complimentary-green);
+    border-radius: 5px;
+    margin: 0;
+    padding: 3rem 2rem;
+}
+
+.product-card figure:hover {
+    border-top: 3px solid var(--emphasis-yellow);
+    border-radius: 5px;
+}
+
+.product-card img{
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+
+.product-info {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.product-info h3 {
+    font-size: 1rem;
+    color: var(--blue-black);
+}
+
+.product-price {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.75rem;
+    color: var(--medium-gray);
+    margin: 0.25rem 0 0.75rem;
+}
+
+.details-button {
+    display: block;
+    color: var(--blue-black);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid var(--blue-black);
+    border-radius: 3px;
+}
+
+.product-card:hover .details-button {
+    background-color: var(--blue-black);
+    color: var(--white);
+}
+
+/* ----Why us styles--------------------------------------------------------------------------------------- */
+.why-us {
+    padding: 2.5rem 0;
+    border-top:1px solid var(--light-gray);
+}
+
+.why-us h2 {
+    font-size: 1.5rem;
+    color: var(--blue-black);
+    margin-bottom: 1rem;
+}
+
+.why-us p {
+    max-width: 40rem;
+    margin: 0 0 1rem;
+}
+
+/* ----Footer styles------------------------------------------------------------------------------------------------ */
+.site-footer {
+    background-color: var(--darkest-blue);
+    color: var(--medium-gray);
+    padding: 2.5rem 0 1.0rem;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-column h2 {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: .75rem;
+}
+
+.footer-column a {
+    font-size: .75rem;
+    font-weight: 100;
+    color: var(--blue-gray);
+}
+
+.footer-column a:hover {
+    color: var(--emphasis-yellow);
+}
+
+.copyright {
+    border-top: 1px solid var(--medium-blue);
+    font-size: .75rem;
+    color: var(--medium-gray);
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+}
