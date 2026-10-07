@@ -51,7 +51,7 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -101,6 +101,48 @@ a {
 
 .site-nav a:hover {
     background-color: var(--emphasis-yellow);
+}
+
+/* ----Footer styles------------------------------------------------------------------------------------------------ */
+.site-footer {
+    background-color: var(--darkest-blue);
+    color: var(--medium-gray);
+    padding: 2.5rem 0 1.0rem;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-column h2 {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer-column li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+    font-size: 0.75rem;
+    color: var(--blue-gray);
+}
+
+.footer-column a:hover {
+    color: var(--emphasis-yellow);
+}
+
+.copyright {
+    border-top: 1px solid var(--medium-blue);
+    font-size: .75rem;
+    color: var(--medium-gray);
+    margin: 2rem 0 0;
+    padding-top: 1rem;
 }
 
 /* ----Home banner styles------------------------------------------------------------------------------------------- */
@@ -242,46 +284,55 @@ a {
     margin: 0 0 1rem;
 }
 
-/* ----Footer styles------------------------------------------------------------------------------------------------ */
-.site-footer {
-    background-color: var(--darkest-blue);
-    color: var(--medium-gray);
-    padding: 2.5rem 0 1.0rem;
+/* ----About banner styles------------------------------------------------------------------------------------------ */
+.about-banner {
+    position: relative;
+    background-color: var(--dark-blue);
+    padding: 3rem 0;
 }
 
-.footer-columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.about-banner-content{
+    max-width: 25rem;
+    margin: 0 auto;
 }
 
-.footer-column h2 {
-    font-family: "Inter", Arial, sans-serif;
-    font-size: .75rem;
-    font-weight: 500;
-    color: var(--white);
-    margin-bottom: 1rem;
+.about-banner-content h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--white)
 }
 
-.footer-column li {
-    margin-bottom: 0.75rem;
-}
-
-.footer-column a {
-    font-size: 0.75rem;
+.about-banner-content p {
+    margin: 0.5rem 0 0;
     color: var(--blue-gray);
 }
 
-.footer-column a:hover {
-    color: var(--emphasis-yellow);
+* ----Our story styles----------------------------------------------------------------------------------------------- */
+.story-section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--light-gray);
+    background-color: var(--lightest-gray);
 }
 
-.copyright {
-    border-top: 1px solid var(--medium-blue);
-    font-size: .75rem;
-    color: var(--medium-gray);
-    margin: 2rem 0 0;
-    padding-top: 1rem;
+.story-section h2 {
+    font-size: 1.25rem;
+    color: var(--blue-black);
+}
+
+.about-para {
+    padding: 2rem 0;
+}
+
+.story-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.story-layout p {
+    font-size: 0.75rem;
+    margin: 0;
 }
 
 /* ----Media queries------------------------------------------------------------------------------------------------ */
