@@ -285,7 +285,7 @@ a {
 }
 
 /* ----About banner styles------------------------------------------------------------------------------------------ */
-.about-banner {
+.about-pg-banner {
     position: relative;
     background-color: var(--dark-blue);
     padding: 3rem 0;
@@ -307,20 +307,21 @@ a {
     color: var(--blue-gray);
 }
 
-* ----Our story styles----------------------------------------------------------------------------------------------- */
-.story-section {
+/* ----about section styles----------------------------------------------------------------------------------------- */
+.about-section {
     padding: 2.5rem 0;
     border-top: 1px solid var(--light-gray);
-    background-color: var(--lightest-gray);
 }
 
-.story-section h2 {
+.about-section h2 {
     font-size: 1.25rem;
     color: var(--blue-black);
 }
 
-.about-para {
+.story-section {
+    background-color: var(--lightest-gray);
     padding: 2rem 0;
+    border-top: none;
 }
 
 .story-layout {
@@ -333,6 +334,62 @@ a {
 .story-layout p {
     font-size: 0.75rem;
     margin: 0;
+}
+
+/* ----Values section styles-------------------------------------------------------------------------------------------- */
+.values-section h2{
+    text-align: center;
+    margin-bottom:2.5rem;
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.value-card {
+    height: 100%;
+    padding: 1.5rem;
+    background-color: var(--lightest-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+.value-icon {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--darkest-blue);
+    border-radius: 3px;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.value-icon-quality {
+    color: var(--emphasis-yellow);
+}
+
+.value-icon-sustain {
+    color: var(--complimentary-green);
+}
+
+.value-icon-innovat {
+    color: var(--white);
+}
+
+.value-card h3 {
+    font-size: 1rem;
+    color: var(--blue-black);
+    margin-bottom: 0.75rem;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 0.75rem;
 }
 
 /* ----Media queries------------------------------------------------------------------------------------------------ */
