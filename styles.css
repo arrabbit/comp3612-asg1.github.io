@@ -307,7 +307,7 @@ a {
     color: var(--blue-gray);
 }
 
-/* ----about section styles----------------------------------------------------------------------------------------- */
+/* ----About section styles----------------------------------------------------------------------------------------- */
 .about-section {
     padding: 2.5rem 0;
     border-top: 1px solid var(--light-gray);
@@ -336,7 +336,7 @@ a {
     margin: 0;
 }
 
-/* ----Values section styles-------------------------------------------------------------------------------------------- */
+/* ----Values section styles---------------------------------------------------------------------------------------- */
 .values-section h2{
     text-align: center;
     margin-bottom:2.5rem;
@@ -392,6 +392,57 @@ a {
     font-size: 0.75rem;
 }
 
+/* ----Meet our team section---------------------------------------------------------------------------------------- */
+.team-section {
+    background-color: var(--lightest-gray);
+}
+
+.team-section h2 {
+    font-size: 1.5rem;
+}
+
+.team-intro {
+    max-width: 28rem;
+    margin: 0.75rem 0 2.5rem;
+    font-size: 0.75rem;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.team-member figure {
+    margin: 0 0 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+}
+
+.team-member img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1rem;
+    color: var(--blue-black)
+}
+
+.team-role {
+    margin: 0.25rem 0 0.75rem;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.6rem;
+    color: var(--emphasis-yellow);
+}
+
+.member-bio {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
 /* ----Media queries------------------------------------------------------------------------------------------------ */
 @media (max-width: 900px) {
     .product-list {
@@ -414,5 +465,11 @@ a {
     .site-header .container {
         flex-direction: column;
         gap: 0.75rem;
+    }
+
+    .story-layout,
+    .values-list,
+    .team-list {
+        grid-template-columns: 1fr;
     }
 }
