@@ -13,6 +13,10 @@
     --white: #FFFFFF;
     --emphasis-yellow: #D6A419;
     --complimentary-green: #206557;
+    --sweater-cream: #ECE6D8;
+    --sweater-gray: #3A3D45;
+    --sweater-blue: #1F2B46;
+    --sweater-orange: #C1631F;
 }
 
 *, *::before, *::after {
@@ -46,12 +50,16 @@ ul {
     list-style: none; margin: 0; padding: 0;
 }
 
+button, input {
+    font-family: inherit;
+}
+
 a {
     text-decoration: none;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -101,6 +109,48 @@ a {
 
 .site-nav a:hover {
     background-color: var(--emphasis-yellow);
+}
+
+/* ----Footer styles------------------------------------------------------------------------------------------------ */
+.site-footer {
+    background-color: var(--darkest-blue);
+    color: var(--medium-gray);
+    padding: 2.5rem 0 1.0rem;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-column h2 {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer-column li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+    font-size: 0.75rem;
+    color: var(--blue-gray);
+}
+
+.footer-column a:hover {
+    color: var(--emphasis-yellow);
+}
+
+.copyright {
+    border-top: 1px solid var(--medium-blue);
+    font-size: .75rem;
+    color: var(--medium-gray);
+    margin: 2rem 0 0;
+    padding-top: 1rem;
 }
 
 /* ----Home banner styles------------------------------------------------------------------------------------------- */
@@ -242,47 +292,605 @@ a {
     margin: 0 0 1rem;
 }
 
-/* ----Footer styles------------------------------------------------------------------------------------------------ */
-.site-footer {
-    background-color: var(--darkest-blue);
-    color: var(--medium-gray);
-    padding: 2.5rem 0 1.0rem;
+/* ----About banner styles------------------------------------------------------------------------------------------ */
+.about-pg-banner {
+    position: relative;
+    background-color: var(--dark-blue);
+    padding: 3rem 0;
 }
 
-.footer-columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.about-banner-content{
+    max-width: 25rem;
+    margin: 0 auto;
 }
 
-.footer-column h2 {
-    font-family: "Inter", Arial, sans-serif;
-    font-size: .75rem;
-    font-weight: 500;
-    color: var(--white);
-    margin-bottom: 1rem;
+.about-banner-content h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--white)
 }
 
-.footer-column li {
-    margin-bottom: 0.75rem;
-}
-
-.footer-column a {
-    font-size: 0.75rem;
+.about-banner-content p {
+    margin: 0.5rem 0 0;
     color: var(--blue-gray);
 }
 
-.footer-column a:hover {
+/* ----About section styles----------------------------------------------------------------------------------------- */
+.about-section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--light-gray);
+}
+
+.about-section h2 {
+    font-size: 1.25rem;
+    color: var(--blue-black);
+}
+
+.story-section {
+    background-color: var(--lightest-gray);
+    padding: 2rem 0;
+    border-top: none;
+}
+
+.story-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.story-layout p {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* ----Values section styles---------------------------------------------------------------------------------------- */
+.values-section h2{
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom:2.5rem;
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.value-card {
+    height: 100%;
+    padding: 1.5rem;
+    background-color: var(--lightest-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+.value-icon {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--darkest-blue);
+    border-radius: 3px;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.value-icon-quality {
     color: var(--emphasis-yellow);
 }
 
-.copyright {
-    border-top: 1px solid var(--medium-blue);
-    font-size: .75rem;
-    color: var(--medium-gray);
-    margin: 2rem 0 0;
-    padding-top: 1rem;
+.value-icon-sustain {
+    color: var(--complimentary-green);
 }
+
+.value-icon-innovat {
+    color: var(--white);
+}
+
+.value-card h3 {
+    font-size: 1rem;
+    color: var(--blue-black);
+    margin-bottom: 0.75rem;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+/* ----Meet our team section---------------------------------------------------------------------------------------- */
+.team-section {
+    background-color: var(--lightest-gray);
+}
+
+.team-section h2 {
+    font-size: 1.5rem;
+}
+
+.team-intro {
+    max-width: 28rem;
+    margin: 0.75rem 0 2.5rem;
+    font-size: 0.75rem;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.team-member figure {
+    margin: 0 0 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+}
+
+.team-member img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1rem;
+    color: var(--blue-black)
+}
+
+.team-role {
+    margin: 0.25rem 0 0.75rem;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.6rem;
+    color: var(--emphasis-yellow);
+}
+
+.member-bio {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+/* --- Journey Section --------------------------------------------------------------------------------------------- */
+.journey-section h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom:2.5rem;
+}
+
+.event-dates-list {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;    /* remove default numbers */
+    border-left: 2px solid var(--light-gray);
+}
+
+.event-dates-list li {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.event-dates-list time {
+    display: block;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    color: var(--complimentary-green);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.event-dates-list p {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    margin: 0.25rem 0 0 ;
+}
+
+/* ----Get in touch section----------------------------------------------------------------------------------------- */
+.contact-section {
+    background-color: var(--lightest-gray);
+}
+
+.contact-section h2 {
+    margin-bottom: 2rem;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 37.5rem;    /* two 18rem cards + 1.5rem gap */
+}
+
+.contact-card {
+    padding: 1.35rem;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+}
+
+.contact-card h3 {
+    font-family:  "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    color: var(--blue-black);
+    margin-bottom: 0.5rem;
+}
+
+.contact-card address {
+    font-size: 0.75rem;
+    font-style: normal;
+}
+
+/* ---- Product nav bar styles ------------------------------------------------------------------------------------- */
+.product-main {
+    background-color: var(--lightest-gray);
+}
+
+.nav-bar {
+    background-color: var(--white);
+    border-bottom: 2px solid var(--light-gray);
+    padding: 0.5rem 0;
+}
+
+.nav-bar ol {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.75rem;
+    color: var(--medium-blue);
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* puts the '>' sign inbetween each li */
+.nav-bar li + li::before {
+    content: "> ";
+}
+
+.nav-bar a {
+    color: var(--medium-blue)
+}
+
+.nav-bar a:hover {
+    color: var(--emphasis-yellow);
+}
+
+/* ---- Product visual section styles ------------------------------------------------------------------------------ */
+.product-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 0 1.75rem;
+}
+
+.product-image {
+    margin: 0;
+}
+
+.product-image img,
+.prod-imgs-list img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.prod-imgs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.product-summary h1 {
+    font-size: 1.5rem;
+    color: var(--blue-black);
+    max-width: 10rem;
+}
+
+.rating-reviews {
+    color: var(--emphasis-yellow);
+    margin: 0.5rem 0 1rem;
+    font-size: 0.60rem;
+}
+
+.prod-info-price {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blue-black);
+}
+
+.product-desc {
+    font-size: 0.75rem;
+    margin: 0 0 1.5rem;
+}
+
+/* ---- Form for product styles ------------------------------------------------------------------------------------ */
+.product-form fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+}
+
+.product-form .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--blue-black);
+    margin-bottom: 0.5rem;
+}
+
+.size-options, .color-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.size-options input[type="radio"], 
+.color-options input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.size-options label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--light-gray);
+    color: var(--dark-blue);
+    font-size: 0.75rem;
+    border-radius: 3px;
+}
+
+.size-options label:hover {
+    border: 2px solid var(--blue-black);
+    background-color: var(--white);
+}
+
+.size-options input[type="radio"]:checked + label {
+    border-color: var(--blue-black);
+    color: var(--blue-black);
+    font-weight: 600;
+}
+
+.size-options input[type="radio"]:focus-visible + label {
+    outline: 2px solid var(--emphasis-yellow);
+    outline-offset: 2px;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+}
+
+.swatch-cream { 
+    background-color: var(--sweater-cream);
+}
+.swatch-cream:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.swatch-blue {
+    background-color: var(--sweater-blue);
+}
+.swatch-blue:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.swatch-gray {
+    background-color: var(--sweater-gray);
+}
+.swatch-gray:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.swatch-orange {
+    background-color: var(--sweater-orange);
+}
+.swatch-orange:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.color-options input[type="radio"]:checked + label {
+    outline: 2px solid var(--blue-black);
+    outline-offset: 2px;
+}
+
+.color-options input[type="radio"]:focus-visible + label {
+    outline: 2px solid var(--emphasis-yellow);
+    outline-offset: 2px;
+}
+
+.quantity-input {
+    width: 6rem;
+    padding: 0.25rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+    font-size: 0.75rem;
+    color: var(--blue-black);
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--emphasis-yellow);
+    color: var(--blue-black);
+    border: 1px solid var(--emphasis-yellow);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-black);
+    color: var(--white);
+    border-color: var(--blue-black);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--blue-black);
+    border: 1px solid var(--blue-black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--blue-black);
+    color: var(--white);
+    border-color: var(--blue-black);
+}
+
+/* ---- Product pg deatil tabs section styles ---------------------------------------------------------------------- */
+.tabs {
+    border-top: 1px solid var(--light-gray);
+}
+
+.tabs ul {
+    display: flex;
+    gap: 1.25rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.tabs a {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--medium-gray);
+    border-bottom: 2px solid transparent;
+}
+
+.tabs a:hover {
+    color: var(--blue-black);
+}
+
+.tabs a[aria-current="true"] {
+    color: var(--blue-black);
+    border-bottom-color: var(--emphasis-yellow);
+}
+
+.tab-panel {
+    padding: 1.75rem 0 2rem;
+}
+
+.tab-panel h2,
+.product-reviews h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: var(--blue-black);
+}
+
+.tab-panel p {
+    max-width: 30rem;
+    margin: 0 0 1.5rem;
+    font-size: 0.75rem;
+}
+
+.tab-panel h3 {
+    margin-bottom: 0.75rem;
+    font-size: 0.6rem;
+    color: var(--blue-black);
+}
+
+.features-table {
+    width: 100%;
+    max-width: 26rem;
+    border-collapse: collapse;    /* makes the row borders show as single lines */
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.6rem;
+}
+
+.features-table tr {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.features-table tr:last-child {
+    border-bottom: none;
+}
+
+.features-table th,
+.features-table td {
+    padding: 0.5rem 0.5rem;
+    text-align: left;
+}
+
+.features-table th {
+    width: 10rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+.features-table td {
+    color: var(--blue-black);
+}
+
+/* ---- Product pg reviews styles ---------------------------------------------------------------------------------- */
+.product-reviews {
+    padding: 1rem 0 2rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.review {
+    padding: 1rem 0;
+}
+
+/* puts a line between reviews only, not above the first */
+.review + .review {
+    border-top: 1px solid var(--light-gray);
+}
+
+.review-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.review-header h3 {
+    font-size: 0.75rem;
+    color: var(--blue-black);
+}
+
+.stars {
+    font-size: 0.65rem;
+    color: var(--emphasis-yellow);
+}
+
+.review-header time {
+    margin-left: auto;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.6rem;
+    color: var(--medium-gray);
+}
+
+.review p {
+    max-width: 32rem;
+    margin: 0.5rem 0 0;
+    font-size: 0.75rem;
+    color: var(--dark-blue);
+}
+
 
 /* ----Media queries------------------------------------------------------------------------------------------------ */
 @media (max-width: 900px) {
@@ -306,5 +914,13 @@ a {
     .site-header .container {
         flex-direction: column;
         gap: 0.75rem;
+    }
+
+    .story-layout,
+    .values-list,
+    .team-list,
+    .contact-options,
+    .product-visual {
+        grid-template-columns: 1fr;
     }
 }
