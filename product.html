@@ -91,6 +91,58 @@
                         <p class="product-desc">
                             This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.
                         </p>
+
+                        <form class="product-form" action="https://www.randyconnolly.com/tests/process.php" method="post">
+                            <fieldset class="form-group">
+                                <legend class="form-label">Size:</legend>
+                                <div class="size-options">
+                                    <input type="radio" id="size-xs" name="size" value="xs" required>
+                                    <label for="size-xs">XS</label>
+                                    
+                                    <input type="radio" id="size-s" name="size" value="s">
+                                    <label for="size-s">S</label>
+                                    
+                                    <input type="radio" id="size-m" name="size" value="m">
+                                    <label for="size-m">M</label>
+                                    
+                                    <input type="radio" id="size-l" name="size" value="l">
+                                    <label for="size-l">L</label>
+                                    
+                                    <input type="radio" id="size-xl" name="size" value="xl">
+                                    <label for="size-xl">XL</label>
+                                    
+                                    <input type="radio" id="size-xxl" name="size" value="xxl">
+                                    <label for="size-xxl">XXL</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="form-group">
+                                <legend class="form-label">Color:</legend>
+                                <div class="color-options">
+                                    <input type="radio" id="color-cream" name="color" value="cream" required>
+                                    <label for="color-cream" class="color-swatch swatch-cream" aria-label="Cream"></label>
+                                    
+                                    <input type="radio" id="color-blue" name="color" value="blue">
+                                    <label for="color-blue" class="color-swatch swatch-blue" aria-label="Blue"></label>
+                                    
+                                    <input type="radio" id="color-gray" name="color" value="gray">
+                                    <label for="color-gray" class="color-swatch swatch-gray" aria-label="Gray"></label>
+                                    
+                                    <input type="radio" id="color-orange" name="color" value="orange">
+                                    <label for="color-orange" class="color-swatch swatch-orange" aria-label="Orange"></label>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group">
+                                <label for="quantity" class="form-label">Quantity:</label>
+                                <input type="number" id="quantity" name="quantity" class="quantity-input" value="1" min="1">
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-secondary">Add to Wishlist</button>
+                            </div>
+                        </form>
                     </div>
                 </section>
 

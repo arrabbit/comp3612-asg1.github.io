@@ -575,6 +575,7 @@ a {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 3px;
 }
 
 .prod-imgs-list {
@@ -593,7 +594,7 @@ a {
 .rating-reviews {
     color: var(--emphasis-yellow);
     margin: 0.5rem 0 1rem;
-    font-size: 0.75rem;
+    font-size: 0.60rem;
 }
 
 .prod-info-price {
@@ -604,12 +605,162 @@ a {
 }
 
 .product-desc {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     margin: 0 0 1.5rem;
 }
 
+/* ---- Form for product styles ------------------------------------------------------------------------------------ */
+.product-form fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+}
 
+.product-form .form-group {
+    margin-bottom: 1.25rem;
+}
 
+.form-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--blue-black);
+    margin-bottom: 0.5rem;
+}
+
+.size-options, .color-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.size-options input[type="radio"], 
+.color-options input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.size-options label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--light-gray);
+    color: var(--dark-blue);
+    font-size: 0.75rem;
+    border-radius: 3px;
+}
+
+.size-options label:hover {
+    border: 2px solid var(--blue-black);
+    background-color: var(--white);
+}
+
+.size-options input[type="radio"]:checked + label {
+    border-color: var(--blue-black);
+    color: var(--blue-black);
+    font-weight: 600;
+}
+
+.size-options input[type="radio"]:focus-visible + label {
+    outline: 2px solid var(--emphasis-yellow);
+    outline-offset: 2px;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+}
+
+.swatch-cream { 
+    background-color: var(--sweater-cream);
+}
+.swatch-cream:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.swatch-blue {
+    background-color: var(--sweater-blue);
+}
+.swatch-blue:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.swatch-gray {
+    background-color: var(--sweater-gray);
+}
+.swatch-gray:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.swatch-orange {
+    background-color: var(--sweater-orange);
+}
+.swatch-orange:hover {
+    border: 2px solid var(--blue-black);
+}
+
+.color-options input[type="radio"]:checked + label {
+    outline: 2px solid var(--blue-black);
+    outline-offset: 2px;
+}
+
+.color-options input[type="radio"]:focus-visible + label {
+    outline: 2px solid var(--emphasis-yellow);
+    outline-offset: 2px;
+}
+
+.quantity-input {
+    width: 6rem;
+    padding: 0.25rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+    font-size: 0.75rem;
+    color: var(--blue-black);
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--emphasis-yellow);
+    color: var(--blue-black);
+    border: 1px solid var(--emphasis-yellow);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-black);
+    color: var(--white);
+    border-color: var(--blue-black);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--blue-black);
+    border: 1px solid var(--blue-black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--blue-black);
+    color: var(--white);
+    border-color: var(--blue-black);
+}
 
 /* ----Media queries------------------------------------------------------------------------------------------------ */
 @media (max-width: 900px) {
