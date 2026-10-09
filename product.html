@@ -12,6 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <!-- 
+    IMAGE ATTRIBUTIONS & CITATIONS
+    -------------------------------------------------------------------------------------------------------------------
+    All product images in this project were generated using Google Gemini AI (October 2026) using the provided
+    assignment images, and the following prompt: 
+        "Can you create a female clothing article equivalent image to the one I've provided? Your created image should
+         be the same size and color scheme, with the same category of clothing (ex. sweater should stay a sweater,
+         shoes should stay shoes, etc.). But, the product should be updated to what would be sold in the female
+         category of the store."
+
+    1. 003-medium-front.png       ->  main front sweater img
+    2. 003-thumb-back.png         ->  thumbnail back sweater img
+    3. 003-thumb-back-angle.png   ->  thumbnail angled back sweater img 
+    4. 003-thumb-front-angle.png  ->  thumbnail angled front sweater img 
+    -->
 </head>
 
 <body>
@@ -36,13 +52,47 @@
                 <ol>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Sweaters</a></li>
-                    <li aria-current="cur-page">Merino Wool Cable Knit Sweater</li>
+                    <li aria-current="page">Merino Wool Cable Knit Sweater</li>
                 </ol>
             </div>
         </nav>
 
         <article class="product">
             <div class="container">
+                <section class="product-visual">
+                    <div class="product-images">
+                        <figure class="product-image">
+                            <img src="images/003-medium-front.png" alt="Wool sweater front view">
+                        </figure>
+                        <ul class="prod-imgs-list">
+                            <li>
+                                <img src="images/003-thumb-back.png" alt="Sweater back view">
+                            </li>
+
+                            <li>
+                                <img src="images/003-thumb-back-angle.png" alt="Sweater back-angle view">
+                            </li>
+
+                            <li>
+                                <img src="images/003-thumb-front-angle.png" alt="Sweater front-angle view">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-summary">
+                        <h1>Merino Wool Cable Knit Sweater</h1>
+                        
+                        <p class="rating-reviews">
+                            <span class="rating-stars">(4.8/5) - 127 reviews</span>
+                        </p>
+
+                        <p class="prod-info-price">$119.99</p>
+
+                        <p class="product-desc">
+                            This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.
+                        </p>
+                    </div>
+                </section>
 
             </div>
         </article>

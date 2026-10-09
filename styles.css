@@ -558,6 +558,58 @@ a {
     color: var(--emphasis-yellow);
 }
 
+/* ---- Product visual section styles ------------------------------------------------------------------------------ */
+.product-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 0 1.75rem;
+}
+
+.product-image {
+    margin: 0;
+}
+
+.product-image img,
+.prod-imgs-list img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.prod-imgs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.product-summary h1 {
+    font-size: 1.5rem;
+    color: var(--blue-black);
+    max-width: 10rem;
+}
+
+.rating-reviews {
+    color: var(--emphasis-yellow);
+    margin: 0.5rem 0 1rem;
+    font-size: 0.75rem;
+}
+
+.prod-info-price {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blue-black);
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    margin: 0 0 1.5rem;
+}
+
+
+
 
 /* ----Media queries------------------------------------------------------------------------------------------------ */
 @media (max-width: 900px) {
@@ -586,7 +638,8 @@ a {
     .story-layout,
     .values-list,
     .team-list,
-    .contact-options {
+    .contact-options,
+    .product-visual {
         grid-template-columns: 1fr;
     }
 }
